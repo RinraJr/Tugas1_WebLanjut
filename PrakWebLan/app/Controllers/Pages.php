@@ -28,7 +28,4 @@ class Pages extends BaseController
                 . view('templates/footer');
         }
 
-        public function mahasiswa(){
-            
-        }
 }
