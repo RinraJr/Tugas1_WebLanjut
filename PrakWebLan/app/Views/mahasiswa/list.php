@@ -2,7 +2,7 @@
 <?= $this->section('content');?>
 
 <div class='p-4'>
-<a class="btn btn-primary mb-3" href="/create" role="button">Tambah</a>
+<a class=" btn btn-primary mb-3" href="/create" role="button"><i class="fa fa-plus"></i> Tambah</a>
 <table class="table table-sm">
   <thead>
     <tr>
@@ -27,10 +27,10 @@
       <td><?= $mhs['created_at'] ?></td>
       <td>
         <div class="d-flex">
-          <a class="btn btn-warning mr-3" href="/edit/<?= $mhs['id'] ?>">Edit</a>
+          <a class="btn btn-warning mr-3" href="/edit/<?= $mhs['id'] ?>"><i class="fa fa-edit"></i> Edit</a>
           <form action="/delete/<?= $mhs['id'] ?>" method="post">
               <input type="hidden" name="_method" value="DELETE">
-              <button type="submit" class="btn btn-danger">Delete</button>
+              <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i> Delete</button>
           </form>
         </div>
         </td>
